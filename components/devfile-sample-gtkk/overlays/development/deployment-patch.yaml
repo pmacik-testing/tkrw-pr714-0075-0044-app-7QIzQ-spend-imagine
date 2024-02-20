@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gtkk
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0044-tenant/tkrw-pr714-0075-0044-app/devfile-sample-gtkk@sha256:523ca7d511b7947335d6e85b2087ae77f7bb8db58de19b8b89dd23369ca8858a
+        name: my-nodejs
+        resources: {}
+status: {}
